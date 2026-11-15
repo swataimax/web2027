@@ -1,0 +1,72 @@
+@charset "UTF-8";
+body {
+    font-size: 16px; /* ブラウザのデフォルトフォントサイズ */
+    font-family: "ＭＳ　ゴシック", sans-serif;
+    background-image: url(../img/lunch-menu_back.jpg);
+}
+.center {
+    text-align: center;
+}
+h1 {
+    font-family: cursive; /* 筆記体 */
+    color: #faebd7;
+    background-color: chocolate;
+}
+
+.menu-price {
+    color: #e60033;
+    font-size: 1.2rem; /* 親要素の1.2倍 */
+    font-weight: bold;
+}
+
+.menu-detail-price { /* メニュー詳細画面の価格 */
+    color: #e60033;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.menu-img { /* メニュー画面の画像サイズ */
+    width: 60%;
+    height: 45%;
+}
+
+.menu-detail-img { /* メニュー詳細画面の画像サイズ */
+    width: 50%;
+    height: 40%;
+}
+
+.menu-unit { /* メニュー画面の各メニューの背景色 */
+    background-color: #ffffff;
+    width: 35%; /* 今回、少し幅を広げる */
+    margin-left: auto;    /* 左右のマージンをautoにして中央寄せ */
+    margin-right: auto;
+    margin-bottom: 1%;
+    border: 1px solid #a9a9a9;
+}
+
+.menu-detail-main { /* メニュー詳細画面のメニューの背景色 */
+    background-color: #ffffff;
+    width: 80%;
+    height: 70%;
+    margin-left: auto; /* 左右のマージンをautoにして中央寄せ */
+    margin-right: auto;
+    padding-top: 3%; /* 画像の上にスペース */
+    border: 1px solid #a9a9a9;
+}
+.menu-detail-frame { /* メニュー詳細画面のメニュー部の横幅 */
+    width: 80%;
+    height: 70%;
+    margin-left: auto; /* 左右のマージンをautoにして中央寄せ */
+    margin-right: auto;
+}
+.menu-detail-notice { /* メニュー詳細の注意書き */
+    border: 2px solid #FF0000;
+    font-size: 0.8rem;
+    text-align: left;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+}
+
+

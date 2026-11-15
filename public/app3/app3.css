@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+body {
+	font-size: 16px;
+	/* ブラウザのデフォルトフォントサイズ */
+	font-family: "ＭＳ　ゴシック", sans-serif;
+	background-image: url(../img/lunch-menu_back.jpg);
+	margin: 0;
+	/* bodyタグに子要素をぴったりくっつけるため */
+	padding: 0;
+}
+
+.center {
+	text-align: center;
+}
+
+h1 {
+	font-family: cursive;
+	/* 筆記体 */
+	color: #faebd7;
+	background-color: chocolate;
+	margin: 0;
+	/* h1タグのマージンを除去 */
+}
+
+.menu-price {
+	color: #e60033;
+	font-size: 1.2rem;
+	/* 親要素の1.2倍 */
+	font-weight: bold;
+}
+
+.menu-detail-price {
+	/* メニュー詳細画面の価格 */
+	color: #e60033;
+	font-size: 1.2rem;
+	font-style: italic;
+}
+
+.menu-img {
+	/* メニュー画面の画像サイズ */
+	width: 60%;
+	height: 45%;
+}
+
+.menu-detail-img {
+	/* メニュー詳細画面の画像サイズ */
+	width: 90%;
+	/* 画像の大きさを変更 */
+	height: 70%;
+}
+
+.menu-unit {
+	/* メニュー画面の各メニューの背景色 */
+	background-color: #ffffff;
+	width: 35%; /* 今回、少し幅を広げる */
+	margin: 1%; /* メニュー同士の間に隙間を設ける */
+	/*margin-left: auto;*/ /* ←ここをコメントアウトまたは削除 */
+	/*margin-right: auto;*/ /* ←ここをコメントアウトまたは削除 */
+	/*margin-bottom: 1%;*/ /* ←ここをコメントアウトまたは削除 */
+	border: 1px solid #a9a9a9;
+}
+
+.menu-detail-main {
+	/* メニュー詳細画面のメニューの背景色 */
+	background-color: #ffffff;
+	width: 80%;
+	height: 70%;
+	margin-left: auto;
+	/* 左右のマージンをautoにして中央寄せ */
+	margin-right: auto;
+	padding-top: 3%;
+	/* 画像の上にスペース */
+	border: 1px solid #a9a9a9;
+}
+
+.menu-detail-frame {
+	/* メニュー詳細画面のメニュー部の横幅 */
+	width: 80%;
+	height: 70%;
+	margin-left: auto;
+	/* 左右のマージンをautoにして中央寄せ */
+	margin-right: auto;
+}
+
+.menu-detail-notice {
+	/* メニュー詳細の注意書き */
+	border: 2px solid #FF0000;
+	font-size: 0.8rem;
+	text-align: left;
+	padding-top: 2%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 2%;
+}
+
+
+.navigation {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	/* 横並びにする */
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	/* メニュー間の隙間 */
+}
+
+.menu-flex {
+	/* メニュー画面のメニューを横並びにする */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu-detail-flex {
+	/* メニュー詳細画面のメニューと説明を横並びにする */
+	display: flex;
+}
+
+.menu-detail-item-name {
+	/* メニュー詳細の商品名 */
+	margin-top: 0;
+	text-align: center;
+}
+
+.menu-detail-description {
+	/* メニュー詳細画面の注意書き */
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+.menu-detail-explanation {
+	/* メニュー詳細画面のメニュー説明 */
+	text-align: left;
+	line-height: 1.6;
+}
+
+.header-margin-top {
+	/* メニュー詳細のヘッダー部マージン */
+	margin-top: 23px;
+}
+
+#jump-to-top {
+    width: 40px;
+    height: 40px;
+    position: fixed; /* 絶対配置（位置固定） */
+    bottom: 10px;
+    right: 10px;
+}
+
+#main > h2 { /* 「id属性の子要素」を指定するセレクター */
+    scroll-margin-top: 100px;
+}
+#main > h2 {
+	scroll-margin-top: 100px;
+}
+
+/*↓2026/11/15追加*/
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-image: url(../img/lunch-menu_back.jpg);
+}
+#main {
+	margin-top: 100px;
+}
+
+
+.list-main { /* テーブル */
+    background-color: #ffffff;
+    width: 80%; /* テーブル幅 */
+    margin-left: auto; /* テーブルを左右中央寄せ */
+    margin-right: auto;
+}
+.th-item-name { /* 商品名 */
+    width: 15%; /* 列幅 */
+}
+.th-price { /* 価格 */
+    width: 10%; /* 列幅 */
+}
+.th-calorie { /* カロリー */
+    width: 10%; /* 列幅 */
+}
+.th-explanation { /* 内容 */
+    width: auto; /* 列幅、自動計算 */
+}
+.text-right { /* 文字を右寄せ */
+    text-align: right;
+}
+.text-left { /* 文字を左寄せ */
+    text-align: left;
+}
+td { /* セルの値は基本的に左寄せにする */
+    text-align: left;
+}

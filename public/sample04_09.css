@@ -1,0 +1,18 @@
+@charset "UTF-8";
+html { /* 親要素 */
+    font-size: 20px;
+}
+div {
+    border: 1px solid; /* 枠線(ボーダー) */
+    height: 100px; /* 高さ */
+}
+.px {
+    font-size: 30px; /* 文字の大きさは30px固定 */
+    width: 800px; /* 幅は800px固定 */
+    background-color: lightcyan; /* 色名指定 */
+}
+.percent {
+    font-size: 0.8rem; /* 親要素(htmlタグ)のフォントサイズの0.8倍 */
+    width: 80%;  /* 親要素(htmlタグ)の幅の0.8倍 */
+    background-color: #ffffe0; /* カラーコード指定 */
+}
